@@ -1,3 +1,3 @@
-# HIT238
+Booking Buddy - an app to reserve tables at your favorite rastaurant faster
 
-Repository for Patrick's HIT238 project
+Project for HIT238
