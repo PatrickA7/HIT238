@@ -7,3 +7,7 @@ Email: testacc@gmail.com
 Password: tester123
 
 Webapp link: http://palegria.spinetail.cdu.edu.au/HIT238App/signin.php
+
+Libraries used
+-Bootstrap
+-jQuery
