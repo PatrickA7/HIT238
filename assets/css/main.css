@@ -4,28 +4,39 @@
   text-align: center;
 }
 
-/* Sign in stuff*/
-
-html,
-body {
-  height: 100%;
+/*hiding number spinners*/
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+    padding-bottom: 40px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+header {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8em;
+    padding-bottom: 3em;
+}
+
+
+/* CSS for login form */
+.login-form {
+    width: 100%;
+    color: #FFFFFF;
+}
 .form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  
 }
 
 .form-signin .checkbox {
@@ -37,7 +48,6 @@ body {
   box-sizing: border-box;
   height: auto;
   padding: 10px;
-  font-size: 16px;
 }
 
 .form-signin .form-control:focus {
@@ -56,10 +66,53 @@ body {
   border-top-right-radius: 0;
 }
 
-/*hiding number spinners*/
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
+/* CSS for info block */
+.info-block {
+    color: #FFFFFF;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.info-block h2, .info-block p {
+    text-align: center;
+    padding: 1em;
+}
+
+.info-block img {
+    padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.container {
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.footer {
+    background: #FFFFFF;
+    text-align: left;
+    padding: 1em;
+    margin-top: 1em;
+}

@@ -8,7 +8,7 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
 
@@ -17,12 +17,12 @@ session_start();
 
   <title>Booking Buddy</title>
 </head>
-
+<header>
+        <h1 class="h2">Sign Up</h1>
+        <p>Register your account</p>
+    </header>
 <body>
-  <!--Start Nav-->
   <form class="form-signin text-center" action="code/signup.code.php" method="POST">
-    <h1 class="h2">Booking Buddy</h1>
-    <h1 class="h4 mb-3 font-weight-normal">Sign Up</h1>
     <label for="inputEmail" class="sr-only">Email address</label>
     <input class="form-control" type="email" placeholder="Email address" required=""  name="email">
     <label for="inputFirstName" class="sr-only">First Name</label>
@@ -38,7 +38,7 @@ session_start();
     </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
   </form>
-
+    
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
