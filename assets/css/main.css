@@ -110,6 +110,35 @@ h1 {
     color: #FFFFFF;
 }
 
+#notif-request {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2F4F4F;
+    color: white;
+    text-align: left;
+    padding: 1em;
+}
+
+#notif-request h1 {
+    font-size: 2em;
+}
+
+#close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .footer {
     background: #FFFFFF;
     text-align: left;

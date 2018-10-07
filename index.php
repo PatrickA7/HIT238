@@ -1,6 +1,8 @@
 <?php
 session_start();
 include('code/connect.code.php');
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,10 +85,13 @@ include('code/connect.code.php');
         </table>
     <a href="reserve.php" class="btn btn-primary btn-lg" role="button">New Reservation</a>
     </div>
-
-
-
-  </div>
+    <div id="notif-request">
+        <span id="close">&times;</span>
+        <h1>Allow Notifications?</h1>
+        <p>Booking Buddy needs permission to send you notifications when your reservation times are near.</p>
+        <button type="button" class="btn btn-outline-light" id="allow-notifs">Allow</button>
+    </div>
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
