@@ -17,8 +17,6 @@ include('code/connect.code.php');
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-
-
   <title>Booking Buddy</title>
 </head>
 
@@ -43,7 +41,7 @@ include('code/connect.code.php');
   </nav>
   <!--End Nav-->
 
-
+    <div class="animate-bottom">
     <div class="container">
         <div class="head">
             <h1>Booking Buddy</h1>
@@ -91,6 +89,7 @@ include('code/connect.code.php');
         <p>Booking Buddy needs permission to send you notifications when your reservation times are near.</p>
         <button type="button" class="btn btn-outline-light" id="allow-notifs">Allow</button>
     </div>
+</div>
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>

@@ -29,7 +29,7 @@ include('code/connect.code.php');
   </nav>
   <!--End Nav-->
 
-
+    <div class="animate-bottom">
   <div class="container">
     <h3 class="text-center">Reservation Details</h3>
     <form method="post" action="code/addItemCode.php">
@@ -49,6 +49,7 @@ include('code/connect.code.php');
     </form>
 
 
+  </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>

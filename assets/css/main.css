@@ -66,6 +66,12 @@ header {
   border-top-right-radius: 0;
 }
 
+/* error messages */
+.login-form .error-message {
+    background-color: red;
+    padding: 0.5em;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -139,9 +145,28 @@ h1 {
     cursor: pointer;
 }
 
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 .footer {
     background: #FFFFFF;
     text-align: left;
     padding: 1em;
     margin-top: 1em;
 }
+

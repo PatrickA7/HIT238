@@ -12,6 +12,7 @@ session_start();
       <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
       <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
       
+      
       <title>Booking Buddy</title>
     </head>
 
@@ -30,9 +31,19 @@ session_start();
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password">
             <div class="checkbox mb-3">
             </div>
+            <!-- error handling -->
+            <?php
+          if($_GET['login'] == "passwordwrong"): ?>
+          <p class="error-message">The password is incorrect. Please try again.</p>
+          <?php elseif($_GET['login'] == "noaccount"): ?>
+          <p class="error-message">No account with this email address was found. Please check your email address or create a new account.</p>
+          <?php elseif($_GET['login'] == "empty"): ?>
+          <p class="error-message">Please enter an email address or password</p>
+         <?php endif; ?>
             <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Sign in</button>
             <a class="btn btn-sm btn-outline-secondary btn-block" href="signup.php">Sign up</a>
           </form>
+          
          </section>
          <section class="info-block">
             <h2>Features</h2>
