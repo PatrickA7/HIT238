@@ -15,17 +15,15 @@ close_notif.onclick = function() {
     notif_request.style.display = "none";
 };
 
-notif_button.onclick = function() {
-  //Check of browser supports notifications
-  if (!("Notification" in window)) {
-    alert("This browser does not support system notifications");
+//Check if permission has already been granted and hide notification request
+if (Notification.permission === "granted") {
+        notif_request.style.display = "none";
   }
 
-  // Check if permission has already been granted
-  else if (Notification.permission === "granted") {
-      var notification = new Notification("Notifications enabled!", {"body":"You'll be notified 2 hours before your reservation starts", "icon":"assets/img/waiter-icon-dark.png"});
-        setTimeout(notification.close.bind(notification), 4000);
-        notif_request.style.display = "none";
+notif_button.onclick = function() {
+  //Check if browser supports notifications
+  if (!("Notification" in window)) {
+    alert("This browser does not support system notifications");
   }
 
   // Ask user for permission
