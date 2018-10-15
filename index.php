@@ -34,7 +34,7 @@ include('code/connect.code.php');
           <a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="account.php">Account</a>
+          <a class="nav-link logout" data-toggle="modal" data-target="#myModal">Logout</a>
         </li>
       </ul>
     </div>
@@ -83,6 +83,30 @@ include('code/connect.code.php');
         </table>
     <a href="reserve.php" class="btn btn-primary btn-lg" role="button">New Reservation</a>
     </div>
+    <div class="modal-container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Are you sure you want to log out?</p>
+        </div>
+        <div class="modal-footer">
+            <form action ="code/signout.code.php" method="POST">
+            <button class="btn btn-lg btn-primary" name="submit" type="submit">Logout</button>
+        </form>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
     <div id="notif-request">
         <span id="close">&times;</span>
         <h1>Allow Notifications?</h1>
