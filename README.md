@@ -1,6 +1,6 @@
 # Booking Buddy
 
-Booking Buddy - an app to reserve tables at your favorite rastaurant faster
+Booking Buddy - an app to reserve tables at your favorite restaurant faster
 
 Project for HIT238
 
