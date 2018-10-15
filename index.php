@@ -74,7 +74,7 @@ include('code/connect.code.php');
                 <td>
                      <form action="code/deleteCode.php" method="post">
                           <input type="hidden" value="'.$row['reserveID'].'" name="rowID">
-                          <input type="submit" value="Remove">
+                          <input class="btn btn-danger" type="submit" value="Remove">
                      </form>
                 </td>
               </tr>';
